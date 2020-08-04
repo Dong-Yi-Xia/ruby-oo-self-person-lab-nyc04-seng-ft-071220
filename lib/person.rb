@@ -7,10 +7,10 @@ class Person
     attr_accessor :happiness, :hygiene, :bank_account
 
     def initialize(name)
-        @name = name 
+        @name = name
         @bank_account = 25
-        @happiness = 8       #0-10 points 
-        @hygiene = 8        #0-10 points 
+        @happiness = 8       #0-10 points
+        @hygiene = 8        #0-10 points
     end
 
     def happiness
@@ -20,7 +20,7 @@ class Person
             return 0
         else
             return @happiness
-        end 
+        end
     end
 
     def hygiene
@@ -30,16 +30,16 @@ class Person
             return 0
         else
             return @hygiene
-        end 
+        end
     end
 
-    def clean? 
+    def clean?
         @hygiene > 7 ? true : false
 
     end
 
-    def happy? 
-         @happiness > 7 ? true : false 
+    def happy?
+         @happiness > 7 ? true : false
     end
 
     def get_paid(salary)
